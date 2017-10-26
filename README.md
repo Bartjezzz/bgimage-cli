@@ -7,7 +7,7 @@ Command line tool for rendering images
 Install the command line tool
 
 ```
-npm install bgimage-cli
+npm install bgimage-cli -g
 ```
 
 ### Usage
