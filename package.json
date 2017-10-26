@@ -1,6 +1,6 @@
 {
   "name": "bgimage-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Process image files",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "commander": "^2.11.0",
+    "fs": "0.0.1-security",
     "path": "^0.12.7",
     "sharp": "^0.18.4"
   }
