@@ -35,6 +35,36 @@ and run
 bgimage-cli i <file.json>
 ```
 
+## Issues with installing on Windows?
+Are you missing Python dependencies or can't compile c++?
+
+f you haven't got python installed along with all the node-gyp dependecies, simply execute:
+
+```
+npm install --global --production windows-build-tools
+```
+and then to install the package
+
+```
+npm install --global node-gyp
+```
+once installed, you will all the node-gyp dependencies downloaded, but you still need the environment variable. Validate Python is indeed found in the correct folder:
+
+```
+C:\Users\ben\.windows-build-tools\python27\python.exe
+```
+Note - it uses python 2.7 not 3.x as it is not supported
+
+If it doesn't moan, go ahead and create your (user) environment variable:
+
+```
+setx PYTHON "%USERPROFILE%\.windows-build-tools\python27\python.exe"
+```
+restart cmd, and verify the variable exists via set PYTHON which should return the variable
+
+```
+Lastly re-apply npm install <module>
+```
 
 
 ## Built With
