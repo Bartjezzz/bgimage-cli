@@ -1,0 +1,20 @@
+{
+  "name": "bgimage-cli",
+  "version": "0.0.1",
+  "description": "Process image files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bart van den Berg",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "bgimage-cli": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "path": "^0.12.7",
+    "sharp": "^0.18.4"
+  }
+}
